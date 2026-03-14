@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             BlocBuilder<CounterCubit, int>(
+              bloc: counterCubit,
               builder: (context, counter) {
                 return Text(
                   '$counter',
